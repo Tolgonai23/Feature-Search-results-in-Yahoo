@@ -1,0 +1,75 @@
+Feature: Search results in Yahoo
+
+Scenario: Search Iphone X in Yahoo website
+ Given website http://www.yahoo.com
+ When  I search iphone X max
+ Then a link for https://search.yahoo.com/search?p=iphone+x&fr is displayed
+
+ ================================================================
+ Feature: Checking suspect by car number 
+     As a Police officer
+     I want to view the car owner's personal information
+     In order to access DMV
+
+ Scenario: Personal information from five Databases
+    Given I am logged my ID number into DMV site
+    And I have entered car number
+    When I view the personal information 
+    Then I should see the all life history
+
+  Scenario: Checking in First Database
+   Given archive of driver license 
+   When i should see last registration year
+   Then going second Database
+
+   Scenario: Checking in second Database 
+     Given I should see a copy of license photo
+     When license foto is not showing
+     Then I should check next Database
+
+   Scenario: Checking in third Database 
+      Given I loggid into the National Crime Information Center
+      When i should see "red" file or "green" file
+      Then "Red" file arested
+      And  "green" file clear
+
+   Scenario: Checking in Forth Database
+        Given I loggid into the Federal DMV
+        When I should see suspects history file
+        Then i should see criminal records and finger print fot file
+        
+   Scenario: Checking in Fifth Database
+         Given I logged my ID number into the Medical record
+         When I should see medical record file history
+         Then I should click "Green" button
+         And All records will saving in tablet
+===============================================================================
+Feature: Registration to kindergaden
+     As a mother of 4 years babygirl 
+     I want to register online for saving time
+
+ Scenario: find near me good kindergaden
+    Given website http://www.google.com
+    When entering into search box "near me kindergaden"
+    Then  I should see several Kindergaden websites
+    And clicking first one 
+
+ 
+  Sceanrio: Kindergaden website
+  Given a link for http://https://campaign.goddardschool.com/dma// as displayed
+   When I should see "GoddardSchool" website
+   Then I should register for more information
+
+  Scenario: Make appointment
+     Given I navigate to "GoddardSchool" homepage
+     When I click Make appointment button
+     And I enter userrname <Tolgonai> and password<12345>
+     And I click Log in button
+     Then I should be able to login successfuly
+
+
+
+
+
+
+
